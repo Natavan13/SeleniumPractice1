@@ -25,14 +25,6 @@ public class BasePage {
         return driver.findElement(locator);
     }
 
-    protected void setText(By locator, String text){
-        findElement(locator).clear();
-        findElement(locator).sendKeys(text);
-    }
-
-    protected void click(By locator){
-        findElement(locator).click(); 
-    }
     protected void click4(By locator){
         findElement(locator).click();
     }
