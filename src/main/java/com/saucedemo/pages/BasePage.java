@@ -24,4 +24,7 @@ public class BasePage {
     protected void click(By locator){
         findElement(locator).click(); 
     }
+    protected void click4(By locator){
+        findElement(locator).click();
+    }
 }
