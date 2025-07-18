@@ -12,18 +12,19 @@ public class BasePage {
         BasePage.driver = driver;
     }
 
-    protected WebElement findElement(By locator){
-        return driver.findElement(locator);
-    }
-
     protected void setText(By locator, String text){
         findElement(locator).clear();
         findElement(locator).sendKeys(text);
     }
 
     protected void click(By locator){
-        findElement(locator).click(); 
+        findElement(locator).click();
     }
+
+    protected WebElement findElement(By locator){
+        return driver.findElement(locator);
+    }
+
     protected void click4(By locator){
         findElement(locator).click();
     }
