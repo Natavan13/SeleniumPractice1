@@ -47,6 +47,6 @@ public class FirstSeleniumTest {
         String actualResult = driver.findElement(By.tagName("h6")).getText();
         String expectedResult = "Dashboard";
 
-        Assert.assertEquals(actualResult, expectedResult  );
+        Assert.assertEquals(actualResult, expectedResult);
     }
 }
